@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class LetterTime {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String userMessage;
+		
+		System.out.println("What is your message?");
+		userMessage = scan.next();
+		
+		System.out.println("Your message is " + userMessage.length() + " characters long.");
+		System.out.println("The first character is at position 0 and is '" + userMessage.charAt(0) + "'");
+		System.out.println("The last character is at position " + userMessage.length() + " and is '" + userMessage.charAt(userMessage.length()) + "'");
+	}
+}

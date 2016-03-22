@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class AddingValues {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int number;
+		int sum = 0;
+		
+		System.out.print("Number: ");
+		number = scan.nextInt();
+		
+		for (int i = 1; i < number; i++) {
+			System.out.print("\n" + i + " ");
+			sum = sum + i;
+		}
+		
+		System.out.println("The sum is " + sum);
+		
+		scan.close();
+	}
+}
